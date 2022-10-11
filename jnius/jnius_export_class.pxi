@@ -825,7 +825,7 @@ cdef class JavaMethod(object):
 
     def __get__(self, obj, objtype):
         if obj is None:
-            self.j_self = None
+                # self.j_self = None
             return self
         # XXX FIXME we MUST not change our own j_self, but return a "bound"
         # method here, as python does!
